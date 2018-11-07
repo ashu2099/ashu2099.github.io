@@ -1,0 +1,72 @@
+#dot-nav {
+	display: none;
+}
+
+@media screen and (min-width: 1000px) and (min-height: 450px) {
+	#dot-nav {
+		display: block;
+		position: fixed;
+		top: 50%;
+		right: 10px;
+		z-index: 999;
+	}
+	#dot-nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	#dot-nav li {
+		position: relative;
+		background-color: transparent;
+		border: 2px solid #fff;
+		border-radius: 25px;
+		cursor: pointer;
+		padding: 0.5vh;
+		height: 10px;
+		margin: 5px 5px 0 0;
+		width: 10px;
+		vertical-align: bottom;
+	}
+
+	#dot-nav li.active,
+	#dot-nav li:hover {
+		background-color: #fff;
+	}
+	#dot-nav a {
+		margin: 0 0 0 15px;
+		position: relative;
+		top: -5px;
+	}
+	.tooltip {
+		position: relative;
+		display: inline-block;
+		border-bottom: 1px dotted black;
+	}
+
+	.awesome-tooltip .tooltiptext {
+		visibility: hidden;
+		width: 80px;
+		background-color: white;
+		color: #b7171c;
+		text-align: center;
+		border-radius: 6px;
+		padding: 5px 0;
+		position: absolute;
+		top: -12px;
+		right: 18px;
+	}
+
+	.awesome-tooltip .tooltiptext::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 100%;
+		margin-top: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: transparent transparent transparent white;
+	}
+	.awesome-tooltip:hover .tooltiptext {
+		visibility: visible;
+	}
+}

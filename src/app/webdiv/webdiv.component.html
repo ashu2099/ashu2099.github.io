@@ -1,0 +1,44 @@
+<div id="2div"
+  class="webdiv maindiv col-xs-12">
+  <div id="conti2" class="conti col-xs-12">
+    <h1 class="webhead">Projects</h1>
+    <h2 class="websub">Click On A Project To Get Redirected To It.</h2>
+    <div class="thumbrow">
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 card" *ngFor="let project of projects">
+        <a target="_blank"
+          href={{project.url}}>
+          <div class="thumbnail">
+
+            <div class="img-container">
+              <img class="img-responsive img-proj" src={{project.imageurl}}
+                alt="#">
+            </div>
+
+            <div class="caption">
+              <h4>{{project.name}}</h4>
+                <p class="def">{{project.details}}</p>
+            </div>
+
+            <div class="trigger" (click)="stopRedir($event)">
+
+              <span class="ellip"></span>
+              <span class="ellip"></span>
+              <span class="ellip"></span>
+
+              <div class="overlay" (click)="stopRedir($event)">
+                <div class="text">
+                  <h4>Technologies Used:</h4>
+                  <p class="def">
+                    {{project.tech}}
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

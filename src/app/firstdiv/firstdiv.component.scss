@@ -1,0 +1,50 @@
+.firstdiv {
+	background: #b7171c;
+	z-index: 6;
+	height: 100vh;
+}
+
+.firstdiv .conti {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.heading {
+	font: 35px "Catamaran";
+	text-align: center;
+	color: white;
+	margin: 0px 0px;
+}
+.namehead {
+	font: small-caps 50px "Lato";
+	text-align: center;
+	color: white;
+	font-weight: 400;
+}
+.btn-grp {
+	border: 1px solid white;
+	border-width: 1px 0px 1px 0px;
+	margin-bottom: 20px;
+	height: 50px;
+}
+.btn {
+	font-family: Montserrat;
+	font-size: 1.2em;
+	color: white;
+	height: 48px;
+	transition-duration: 0.3s;
+}
+
+.btn:hover {
+	background-color: white;
+	color: #b7171c;
+}
+
+.btn a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}

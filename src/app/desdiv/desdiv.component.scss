@@ -1,0 +1,52 @@
+.desdiv {
+	background: #333 url(../../assets/resources/design.webp);
+	background-size: cover;
+	z-index: 9;
+}
+.deshead {
+	font: small-caps 45px "Lato";
+	text-align: center;
+	color: white;
+	font-weight: 700;
+}
+.dessub {
+	font: 30px "Catamaran";
+	text-align: center;
+	color: white;
+	margin-top: 0px;
+}
+
+.butt {
+	width: 100%;
+	min-height: 50px;
+	border: 2px solid white;
+	background: transparent;
+	margin: 15px 0px 15px 0px;
+	font: 20px "Montserrat";
+	text-align: center;
+	color: white;
+	transition: 0.3s ease-in;
+}
+.butt:hover {
+	background: white;
+	color: black;
+}
+
+.img-header {
+	background: url(../../assets/resources/graphicbg.webp);
+	background-size: cover;
+	background-position: center;
+}
+
+.mobile-img {
+	display: none;
+}
+
+@media only screen and (max-width: 400px) {
+	.img-header {
+		display: none;
+	}
+	.mobile-img {
+		display: block;
+	}
+}

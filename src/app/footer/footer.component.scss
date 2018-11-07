@@ -1,0 +1,17 @@
+.footdiv {
+	background: #b7171c;
+	z-index: 11;
+	height: auto;
+}
+.footnote {
+	font: 15px "Montserrat";
+	text-align: center;
+	color: white;
+	font-weight: 400;
+	margin: 25px 0px;
+}
+@media screen and (max-width: 768px) {
+	.footnote {
+		font-size: 10px;
+	}
+}

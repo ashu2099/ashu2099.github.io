@@ -1,0 +1,171 @@
+.abtdiv {
+	background: #444 url(../../assets/resources/ashu.webp);
+	background-size: cover;
+	background-position: center;
+	z-index: 10;
+	height: auto;
+	padding: 0px 15px 25px 15px !important;
+}
+.abthead {
+	font: small-caps 45px "Lato";
+	text-align: center;
+	color: white;
+	font-weight: 700;
+	font-style: italic;
+}
+.img-responsive {
+	max-width: 100%;
+	display: block;
+	margin: 0px 0px 0px 0px;
+}
+
+.qt {
+	font-family: "Catamaran";
+	color: white;
+	font-style: italic;
+}
+
+/*SKILLbar*/
+.skillbar p {
+	margin-bottom: 0px;
+}
+
+.bar {
+	width: 15%;
+	height: 10px;
+	border: 1.5px solid white;
+	margin: 0% 1.5%;
+	display: inline-block;
+}
+.hfilled {
+	background: linear-gradient(
+		to right,
+		#ffffff 0%,
+		#ffffff 50%,
+		transparent 50%,
+		transparent 100%
+	);
+	background-position: left;
+}
+.filled {
+	background-color: white !important;
+}
+/*SKILLbarENDS*/
+
+@media screen and (min-width: 500px) {
+	.qt {
+		margin-top: 5%;
+	}
+}
+
+.desc {
+	font-family: "Lato";
+	color: white;
+	font-weight: 400;
+	margin-top: 20px;
+}
+@media screen and (max-width: 500px) {
+	.qt,
+	.desc {
+		font-size: 15px;
+	}
+}
+@media screen and (min-width: 501px) and (max-width: 768px) {
+	.qt,
+	.desc {
+		font-size: 17px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 2559px) {
+	.qt,
+	.desc {
+		font-size: 19px;
+	}
+}
+@media screen and (min-width: 2560px) {
+	.qt,
+	.desc {
+		font-size: 35px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.qt,
+	.desc {
+		text-align: center;
+	}
+}
+@media screen and (min-width: 500px) {
+	.qt,
+	.desc {
+		margin-right: 15px;
+	}
+}
+
+.infodiv {
+	color: white;
+	text-align: center;
+}
+.infohead {
+	font: small-caps 20px "Lato";
+	border-bottom: 2px solid white;
+}
+.infodiv {
+	font: 16px "Lato";
+}
+.infodiv > a > button {
+	font: 13px "Lato";
+}
+
+.socbox {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	height: 45px;
+	width: 100px;
+	border: 2px solid white;
+}
+.socbox:hover {
+	background-color: white;
+	color: black;
+}
+.socpic {
+	max-width: 20%;
+	display: inline-block;
+	float: left;
+	margin: 0px 0px;
+}
+.socboxln {
+	background-color: #0077b5;
+	margin: 3px 1.5px;
+}
+.socboxbe {
+	background-color: #1769ff;
+	margin: 3px 1.5px;
+}
+.socboxfb {
+	background-color: #3b5998;
+	margin: 3px 1.5px;
+}
+.socboxgh {
+	background-color: #ffcd94;
+	color: black;
+	margin: 3px 1.5px;
+}
+.socboxin {
+	background-color: #c32aa3;
+	margin: 3px 1.5px;
+}
+
+.resbox {
+	display: block;
+	width: 100%;
+	background-color: #008c3c;
+	font-size: 16px !important;
+}
+.resbox:hover {
+	background-color: #10ea6f;
+}
+.resbox span {
+	font-size: 16px;
+}

@@ -1,0 +1,133 @@
+.webdiv {
+	background: #555 url(../../assets/resources/web.webp);
+	background-size: cover;
+	z-index: 7;
+}
+.webhead {
+	font: small-caps 45px "Lato";
+	text-align: center;
+	color: white;
+	font-weight: 700;
+	margin: 10px 0px;
+}
+.websub {
+	font: 30px "Catamaran";
+	text-align: center;
+	color: white;
+	margin: 0px 0px 10px 0px;
+}
+
+/*WEBDIV Thumbnail CSS*/
+.thumbrow a {
+	text-decoration: none;
+}
+.thumbrow h4 {
+	text-align: center;
+	font-weight: bold;
+	font-family: "Lato";
+	margin: 10px 0px;
+}
+.thumbrow .def {
+	font-family: "Montserrat";
+	margin: 10px 0px;
+}
+.thumbnail {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	position: relative;
+	margin: 10px 0px;
+	overflow: hidden;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+}
+
+.img-container {
+	overflow: hidden;
+}
+
+.thumbnail .img-proj {
+	transition: 0.3s ease-in;
+}
+
+.thumbnail:hover .img-proj {
+	transform: scale(1.1);
+}
+
+.caption {
+	padding: 5px;
+	color: inherit;
+}
+
+@media screen and (min-height: 450px) and (min-width: 1000px) {
+	.thumbrow {
+		padding: 0px;
+	}
+}
+
+.trigger {
+	background-color: white;
+	color: black;
+}
+
+.ellip {
+	content: "";
+	display: inline-block;
+	background-color: black;
+	height: 4px;
+	width: 4px;
+	margin: 3px 3px 0px 3px;
+}
+
+/*OVERLAY*/
+.overlay {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background-color: white;
+	overflow: hidden;
+	height: 0;
+	transition: 0.5s ease;
+	color: black;
+}
+
+.trigger:hover .overlay {
+	top: 60%;
+	height: 100%;
+}
+.text {
+	width: 100%;
+	color: inherit;
+	position: absolute;
+	padding: 10px;
+	text-align: center;
+}
+/*OVERLAYENDS*/
+
+@media screen and (min-width: 501px) and (max-width: 1599px) {
+	.def {
+		font-size: 15px;
+	}
+	h4 {
+		font-size: 17px;
+	}
+}
+@media screen and (min-width: 1600px) and (max-width: 2559px) {
+	.def {
+		font-size: 23px;
+	}
+	h4 {
+		font-size: 25px;
+	}
+}
+@media screen and (min-width: 2559px) {
+	.def {
+		font-size: 45px;
+	}
+	h4 {
+		font-size: 47px;
+	}
+}
+/*WEBDIV Thumbnail CSS Ends*/
